@@ -22,30 +22,36 @@
 .card-auth {
     box-shadow: 5px 5px 0px #cecccc;
     border-radius: 15px;
-    /* padding-right: 100px;
-    padding-left: 100px;*/
 }
 
-.custum-form {
-    /* padding: 80px;*/
+.form-header {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    color: #fff;
+    text-align: center;
+    margin-top: -2.5rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.form-header_register {
+    background-color: #00893c;
+}
+
+.form-header_login {
+    background-color: #ecb858;
 }
 
 .custum-form input {
     border-radius: 20px;
 }
 
+.custum-form label {
+    font-weight: bold;
+}
+
 .btn-rounded {
     border-radius: 10rem;
-}
-
-.btn-success {
-    /*color: #00893c;*/
-}
-
-.btn-success {
-    color: #fff;
-    background-color: #00893c;
-    border-color: #00893c;
 }
 
 .btn-login {
