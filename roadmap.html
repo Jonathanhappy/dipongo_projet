@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="description" content="Encodage de la page" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Compatibilité de la page." http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dipongo | Roadmap</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/icon/logo_bblink.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/img/icon/logo_bblink.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon/logo_bblink.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon/logo_bblink.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="assets/font/font-awesome/css/font-awesome-5.1.0.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/Patterns/roadmap.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style></style>
+</head>
+
+<body class="background-image-map">
+    <div class="col-12  px-0">
+        <section class="section-login d-flex align-items-end">
+            <div class="col-3 col-md-2 col-lg-1 close"><a href=""><img src="/assets/img/bouton-quitter.png" class="img-fluid" alt=""></a></div>
+            <div class="container-fluid">
+                <div class="">
+                    <div class="row">
+                        <div class="col-12 col-sm-8 col-md-12">
+                            <div class="row">
+                                <div class="map">
+                                    <div class="col-8 col-md-3 px-0 ml-md-5">
+                                        <img src="assets/img/Julienroadmap.png" class="img-fluid card-img" alt="">
+                                    </div>
+                                    <div class="absolute col-11 col-md-9 mx-auto card card-auth text-justify pl-md-5 mb-3">
+                                        <div class="card-body p-1 py-lg-5">
+                                            <p class="mb-0 ml-5 mySlides fade">Bienvenue XXXX , Je suis Julien le meilleur sauveteur de France. Surveiller les plages et sauver des vies ça me connait !</p>
+                                            <p class="mb-0 ml-5 mySlides fade">La saison de surveillance des plages commence dans quelques heures et nous avons un problème. Il nous manque un sauveteur de qualité pour compléter notre équipe</p>
+                                            <p class="mb-0 ml-5 mySlides fade">Viens nous rejoindre dans l'équipe, tu vas découvrir un métier passionnant. Allez en route je n'ai que 50 min pour te former, tu devras être attentif.</p>
+                                            <p class="mb-0 ml-5 mySlides fade">Voici notre jolie plage. Pour bien la protéger tu dois la connaitre parfaitement. Pour cela je vais te faire découvrir 4 lieux.</p>
+                                            <p class="mb-0 ml-5 mySlides fade">Dans chacun d'eux tu devras récolter un maximum de bouées tubes pour valider le lieux. Pour gagner des bouées tubes tu devras répondre à mes questions et relever mes défis. fond plage</p>
+                                            <p class="mb-0 ml-5 mySlides fade">Si tu réussis la mission en 50 min ou moins tu pourras vivre une expérience inédite. Je ne t'en dis pas plus nous sommes pressés. C'est parti !</p>
+                                            <a id="next" onclick="plusSlides(1)"><i class="fas fa-chevron-down fa-3x float-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--  SCRIPTS  -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/assets/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        $(function() {
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        /*function currentSlide(n) {
+showSlides(slideIndex = n);
+}*/
+
+        function showSlides(n) {
+            var i;
+            var slides = $(".mySlides");
+            if (n > slides.length) {
+                /*slideIndex = 1*/
+                window.location.href = "begin.html"
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+        $('#next').on('click', function() {
+            var page = 0;
+            page = page + 1;
+            if (page = 1) {
+                $(".background-image-map").css("background-image", "url(/assets/img/roadmap_bg3.png)");
+            } else if (page = 3) {
+                $(".background-image-map").css("background-image", "url(/assets/img/roadmap_bg3.png)");
+            } else if (page = 5) {
+                $(".background-image-map").css("background-image", "url(/assets/img/road-map_vide.png)");
+            }
+
+        });
+    </script>
+
+</body></html>
